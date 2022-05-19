@@ -34,11 +34,13 @@ yarn-error.log*
 .vercel
 
 node_modules
-
+.env
 coverage
 coverage.json
 typechain
-
+.appId
+.secret
+config.js
 #Hardhat files
 cache
-
+artifacts
