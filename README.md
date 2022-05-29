@@ -12,6 +12,7 @@ For developers looking to contribute or modify the code, or view the example use
   create file config.js and update with 
   
    export const nftaddress = ''
+   
    export const nftmarketaddress = ''
    
   Create .secrete file and add your private key
