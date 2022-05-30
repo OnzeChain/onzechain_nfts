@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 //components
 import NFTcard from '../components/NFT-card';
 import NoNFTS from '../components/No-NFTs';

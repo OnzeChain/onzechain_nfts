@@ -1,4 +1,5 @@
 import Link from 'next/link'
+//import QuickLogo from '../assets/images/fulllogo_transparent_nobuffer.png'
 import { useTheme } from 'next-themes'
 
 const Header = ({ }) => {
@@ -7,7 +8,9 @@ const Header = ({ }) => {
         <div className='w-screen px-8 py-3 text-sm border-b border-opacity-50 flexCenter border-secondary '>
             <div className='justify-between w-screen mx-auto flexCenter max-w-7xl'>
                 
-
+                {/* <Link to='/'>
+                    <img src={QuickLogo} alt='QuickLogo' height={60} />
+                </Link> */}
                 
                 <nav id='nav' className="w-auto p-2 bg-transparent border-b md:bg-secondary md:w-4/6">
                     <div className="justify-around hidden m-3 flexCenter text-primary md:flex ">

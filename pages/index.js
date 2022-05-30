@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // icons 
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { FaEthereum } from 'react-icons/fa';
