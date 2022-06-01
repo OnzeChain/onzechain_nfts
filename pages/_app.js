@@ -1,4 +1,5 @@
-import '../styles/globals.css'
+import '../styles/input.css'
+//import '../styles/main.css'
 import { ThemeProvider } from 'next-themes'
 import React from 'react';
 import Header from '../components/Header'
