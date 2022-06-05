@@ -1,4 +1,7 @@
-// SPDX-License-Identifier: MIT OR Apache-2.0
+// contracts/NFT.sol
+/// SPDX-License-Identifier: MIT OR LGPL-3.0-or-later
+
+
 pragma solidity ^0.8.3;
 
 import "@openzeppelin/contracts/utils/Counters.sol";
@@ -12,11 +15,11 @@ contract NFT is ERC721URIStorage {
     Counters.Counter private _tokenIds;
     address contractAddress;
 
-    constructor(address marketplaceAddress) ERC721("Onzenft", "ONZN") {
+    constructor(address marketplaceAddress) ERC721("Kryptopixel Tokens", "KYT") {
         contractAddress = marketplaceAddress;
     }
 
-    function createToken(string memory tokenURI) public returns (uint256) {
+    function createToken(string memory tokenURI) public returns (uint) {
         _tokenIds.increment();
         uint256 newItemId = _tokenIds.current();
 

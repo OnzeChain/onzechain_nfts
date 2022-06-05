@@ -1,24 +1,23 @@
-import '../styles/globals.css'
-import { ThemeProvider } from 'next-themes'
-import React from 'react';
+/* pages/_app.js */
+import "../styles/globals.css";
 import Header from '../components/Header'
 import SideNav from '../components/SideNav';
 import Footer from '../components/Footer';
+import '../styles/index.css'
 
+function Marketplace({ Component, pageProps }) {
 
-function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider forcedTheme={Component.theme || undefined} attribute="class">
-    <div className='App '>
-      <Header />
-      <SideNav />
-      <div className='w-screen mx-auto min-h-90vh max-w-7xl '>
-        <Component {...pageProps} />
-      </div>
-      <Footer />
+  
+    <div className='w-screen min-h-screen overflow-hidden capitalize bg_image'>
+    <Header />
+    <SideNav />
+    <div className='w-screen mx-auto min-h-90vh max-w-7xl '>
+      <Component {...pageProps} />
     </div>
-    </ThemeProvider>
-  )
+    <Footer />
+  </div>
+  );
 }
 
-export default MyApp
+export default Marketplace;
